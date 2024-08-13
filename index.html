@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Memes Avanzado</title>
+    <link rel="stylesheet" href="style .css">
+
+</head>
+<body class="light-mode">
+
+<div>
+    <h1>Generador de Memes Avanzado</h1>
+    <label for="theme-select">Seleccionar tema de la página:</label>
+    <select id="theme-select">
+        <option value="light">Modo Claro</option>
+        <option value="dark">Modo Oscuro</option>
+    </select>
+</div>
+
+<div style="margin-top: 20px;">
+    <label for="category-select">Elige una categoría de meme:</label>
+    <select id="category-select">
+        <option value="Billy y Mandy">Billy y Mandy</option>
+        <option value="Bob Esponja">Bob Esponja</option>
+        <option value="La familia del futuro">La familia del futuro</option>
+    </select>
+</div>
+
+<div style="margin-top: 20px;">
+    <label for="image-select">Selecciona una imagen:</label>
+    <select id="image-select">
+        <option value="">--Seleccionar--</option>
+        <option value="media\bill1.jpeg" data-category="Billy y Mandy">Billy y Mandy 1</option>
+        <option value="media\bill2.jpeg" data-category="Billy y Mandy">Billy y Mandy 2</option>
+        <option value="media\bill3.jpeg" data-category="Billy y Mandy">Billy y Mandy 3</option>
+        <option value="media\bob tonoto.jpeg" data-category="Bob Esponja">Bob Esponja 1</option>
+        <option value="media\bob1.jpeg" data-category="Bob Esponja">Bob Esponja 2</option>
+        <option value="media\bob2.jpeg" data-category="Bob Esponja">Bob Esponja 3</option>
+        <option value="media\futurefamily1.jpeg" data-category="La familia del futuro">La familia del futuro 1</option>
+        <option value="media\futurefamily2.jpg" data-category="La familia del futuro">La familia del futuro 2</option>
+        <option value="media\futurefamily3.jpeg" data-category="La familia del futuro">La familia del futuro 3</option>
+    </select>
+</div>
+
+<div style="margin-top: 20px;">
+    <label for="top-text">Texto superior:</label>
+    <input type="text" id="top-text" placeholder="Añade tu texto">
+</div>
+
+<div style="margin-top: 10px;">
+    <label for="creator-name">Nombre del creador:</label>
+    <input type="text" id="creator-name" placeholder="Tu nombre">
+</div>
+
+<div style="margin-top: 10px;">
+    <label for="font-family">Tipo de letra:</label>
+    <select id="font-family">
+        <option value="Arial">Arial</option>
+        <option value="Courier New">Courier New</option>
+        <option value="Georgia">Georgia</option>
+        <option value="Times New Roman">Times New Roman</option>
+    </select>
+</div>
+
+<div style="margin-top: 10px;">
+    <label for="font-size">Tamaño de letra:</label>
+    <input type="number" id="font-size" value="20">
+</div>
+
+<div style="margin-top: 10px;">
+    <label for="font-color">Color de letra:</label>
+    <input type="color" id="font-color" value="#000000">
+</div>
+
+<div id="meme-container" class="meme-style">
+    <div id="meme-text"></div>
+    <img id="meme-image" src="" alt="Selecciona una imagen">
+</div>
+
+<div id="creator-display"></div>
+
+<button id="generate-button" style="margin-top: 20px;">Generar Meme</button>
+
+<script src="script.js"></script>
+</body>
+</html>
